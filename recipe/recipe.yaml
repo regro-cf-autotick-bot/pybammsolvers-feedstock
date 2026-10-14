@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: pybammsolvers
-  version: "0.9.1"
+  version: "0.11.1"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/pybammsolvers-${{ version }}.tar.gz
-  sha256: 13b54410727ee0649a1c106d53a19565a1f28c2f965cafb7c5a21979ae1a0f92
+  sha256: 26a00b7d4da165063828b127de3a3f77d76c5407c479e0357789ab691eec119e
   patches:
     # find BLAS but still set SUNDIALS_LIBRARIES for pybammsolvers
     - 0001-Fix-Windows-cmake-prefix-path.patch
